@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "😻 Home page";
+}
+
+<style>
+    body {
+        background-image: url('/lib/3.jpeg');
+        background-size: cover;
+        background-color: bisque;
+        color: black;
+    }
+
+    .text-center {
+        padding: 200px 0; /* Adjusted padding to center the content without overlapping the background */
+    }
+
+    .display-4 {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 10px; /* Reduced margin between the lines */
+    }
+
+    p {
+        font-size: 24px;
+    }
+</style>
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Group 01</h1>
+    <h1 class="align-content-md-center">BDAT1001-23S.4 IES Assignment 😻</h1>
+    <p>Betsabe Romero | Lais Assini Cavalheiro | Sera Erisek | Yucheng Yu</p>
+    <p style="font-size:medium">Today is @DateTime.Now.DayOfWeek, @DateTime.Now</p>
+</div>
